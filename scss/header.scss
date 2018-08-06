@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  height: 790px;
+  background-image: url('./source/bg/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &-text {
+    padding-top: 300px;
+
+    &-top {
+      font-size: 44px;
+    }
+
+    &-brand {
+      color: $orange;
+    }
+
+    &-bottom {
+      font-size: 20px;
+    }
+  }
+
+  &-scroll {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+
+    div {
+      @include icon(50px, 2px, $white, 'arrow.svg', 16px);
+      cursor: pointer;
+    }
+  }
+}
